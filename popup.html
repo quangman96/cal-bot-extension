@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="button.css" />
+  </head>
+  <body class="container">
+    <div class="area">
+      <h3>HGNC Computational Bot</h3>
+      <div class="rr">
+        <input id="name" placeholder="C" oninput="rePri('coin')" />
+        <span id="pri"></span>
+      </div>
+      <div class="rr">
+        <select class="select" id="type">
+          <option value="l">L</option>
+          <option value="s">S</option>
+        </select>
+        <input
+          id="x"
+          type="number"
+          min="0"
+          placeholder="X"
+          value="18"
+          oninput="reCal()"
+        />
+      </div>
+      <div class="rr">
+        <input
+          id="entry"
+          type="number"
+          min="0"
+          placeholder="Entry"
+          oninput="reCal()"
+        />
+        <input
+          id="vol"
+          type="number"
+          min="0"
+          placeholder="VOL"
+          oninput="reCal()"
+        />
+        <input
+          id="margin"
+          type="number"
+          min="0"
+          placeholder="Margin"
+          oninput="reCal()"
+        />
+      </div>
+      <div class="rr">
+        <input
+          id="tp"
+          type="number"
+          min="0"
+          placeholder="TP"
+          oninput="reCal()"
+        />
+        <input
+          id="tpu"
+          type="number"
+          min="0"
+          placeholder="+"
+          oninput="reCal()"
+        />
+        <input
+          id="tpp"
+          type="number"
+          min="0"
+          placeholder="%"
+          oninput="reCal()"
+        />
+      </div>
+      <div class="rr">
+        <input
+          id="sl"
+          type="number"
+          min="0"
+          placeholder="SL"
+          oninput="reCal()"
+        />
+        <input
+          id="slu"
+          type="number"
+          min="0"
+          placeholder="-"
+          oninput="reCal()"
+        />
+        <input
+          id="slp"
+          type="number"
+          min="0"
+          placeholder="%"
+          oninput="reCal()"
+        />
+      </div>
+      <div style="display: flex; margin-top: 20px">
+        <h3>Random Number</h3>
+        <span style="flex: 1 1 auto"></span>
+        <button type="button" onclick="getRad()">Go!</button>
+      </div>
+      <div class="rr">
+        <input id="min" type="number" min="0" placeholder="Min" />
+        <input id="max" type="number" min="0" placeholder="Max" />
+        <span style="font-size: 32px; padding-left: 30px" id="rad"></span>
+      </div>
+
+      <script src="popup.js"></script>
+    </div>
+  </body>
+</html>
